@@ -44,6 +44,7 @@ Object oSelectJugador is a cWebView
         Set pbFillHeight to True
         Set pbShowHeader to False
         Set piSortColumn to 0
+        Set piOrdering to 1
 
         Object oligaID is a cWebColumn
             Entry_Item liga.ID
@@ -184,6 +185,10 @@ Object oSelectJugador is a cWebView
         Case End
 
     End_Procedure
-
+    
+Procedure OnBeforeShow
+    Send Request_Find of ojugador_DD FIRST_RECORD (jugador.File_Number) 1
+    Send GridRefresh of oList
+End_Procedure
 
 End_Object 

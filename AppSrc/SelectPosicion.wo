@@ -34,6 +34,7 @@ Object oSelectPosicion is a cWebView
         Set pbFillHeight to True
         Set pbShowHeader to False
         Set piSortColumn to 0
+        Set piOrdering to 1
 
         Object oposicionID is a cWebColumn
             Entry_Item posicion.ID
@@ -156,6 +157,10 @@ Object oSelectPosicion is a cWebView
         Case End
 
     End_Procedure
-
+    
+Procedure OnBeforeShow
+    Send Request_Find of oposicion_DD FIRST_RECORD (posicion.File_Number) 1
+    Send GridRefresh of oList
+End_Procedure
 
 End_Object 

@@ -34,7 +34,8 @@ Object oSelectLiga is a cWebView
         Set pbFillHeight to True
         Set pbShowHeader to False
         Set piSortColumn to 0
-
+        Set piOrdering to 1
+        
         Object oligaID is a cWebColumn
             Entry_Item liga.ID
             Set psCaption to "liga.ID"
@@ -174,6 +175,10 @@ Object oSelectLiga is a cWebView
         Case End
 
     End_Procedure
-
+    
+   Procedure OnBeforeShow
+    Send Find of oliga_DD FIRST_RECORD 1
+    Send GridRefresh of oList
+End_Procedure
 
 End_Object 
