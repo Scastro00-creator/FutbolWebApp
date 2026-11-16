@@ -1,0 +1,8 @@
+IdeSrc/
+Programs/
+*.loc
+*.dbg
+*.fld
+*.pkd
+*.prn
+*.tag
