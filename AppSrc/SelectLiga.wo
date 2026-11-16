@@ -15,7 +15,7 @@ Use cligaDataDictionary.dd
 Object oSelectLiga is a cWebView
     Set psCaption to "SelectLiga"
     Set peWebViewStyle to wvsDrilldown
-    Set peViewType to vtSelect
+    Set peViewType to vtUndefined
     Set piColumnCount to 12
     Set pbShowCaption to False
     Set piMaxWidth to 1024

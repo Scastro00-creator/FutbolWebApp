@@ -15,7 +15,7 @@ Use cposicionDataDictionary.dd
 Object oSelectPosicion is a cWebView
     Set psCaption to "SelectPosicion"
     Set peWebViewStyle to wvsDrilldown
-    Set peViewType to vtSelect
+    Set peViewType to vtUndefined
     Set piColumnCount to 12
     Set pbShowCaption to False
     Set piMaxWidth to 1024

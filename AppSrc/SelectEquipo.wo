@@ -16,7 +16,7 @@ Use cequipoDataDictionary.dd
 Object oSelectEquipo is a cWebView
     Set psCaption to "SelectEquipo"
     Set peWebViewStyle to wvsDrilldown
-    Set peViewType to vtSelect
+    Set peViewType to vtUndefined
     Set piColumnCount to 12
     Set pbShowCaption to False
     Set piMaxWidth to 1024
